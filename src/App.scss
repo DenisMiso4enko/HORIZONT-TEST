@@ -1,0 +1,14 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 var(--space-20);
+}
+
+.content {
+  margin-top: var(--space-100)
+}
+
+.title {
+  font-size: var(--font-h1);
+  margin-bottom: var(--space-20);
+}

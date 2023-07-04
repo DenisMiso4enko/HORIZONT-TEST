@@ -1,0 +1,44 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: var(--space-15) 0;
+  z-index: 10;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: var(--font-h2);
+    transition: color .3s ease;
+    &:hover {
+      color: var(--color-gray)
+    }
+  }
+
+  &__links {
+    position: relative;
+    a {
+      transition: color .3s ease;
+      &:hover {
+        color: #c0c0c0;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: 1px;
+      height: 100%;
+      background-color: var(--color-white);
+    }
+  }
+}

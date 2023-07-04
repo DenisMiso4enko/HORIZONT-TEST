@@ -1,0 +1,28 @@
+.btn {
+  border: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: var(--space-20) 0;
+}
+
+.pagination__item {
+  display: inline-block;
+  margin: 0 5px;
+  padding: var(--space-5) var(--space-10);
+  background-color: var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination__item--active {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.pagination__item--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
